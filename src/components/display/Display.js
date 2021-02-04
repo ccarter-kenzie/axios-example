@@ -28,11 +28,12 @@ class Display extends Component{
     let display = (<div>No data found</div>);
 
     if (this.state.data) {
-      display = this.state.data.map((value) => {        
+      display = this.state.data.map((value) => {
         return (
-          <li key={value.id}>{value.question}</li>
+          <li id={value.id} key={value.id}>{value.question}</li>
         )
       })
+      console.log(display)
     }
     return (
       <div>        

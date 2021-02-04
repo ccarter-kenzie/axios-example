@@ -2,7 +2,7 @@ import axios from 'axios';
 
 class Service {
   constructor(){
-    this.url = 'http://jservice.io/api/random?count=25';
+    this.url = 'http://jservice.io/api/random';
     this.client = axios.create();
   }
 
